@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4.发布 · GitBook</title>
+        <title>3.1.输出为静态网站 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="github.html" />
+    <link rel="next" href="pdf.html" />
     
     
-    <link rel="prev" href="../output/pdf.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -205,9 +205,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../output/">
+        <li class="chapter " data-level="1.4" data-path="./">
             
-                <a href="../output/">
+                <a href="./">
             
                     
                     3.图书输出
@@ -219,9 +219,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../output/static.html">
+        <li class="chapter active" data-level="1.4.1" data-path="static.html">
             
-                <a href="../output/static.html">
+                <a href="static.html">
             
                     
                     3.1.输出为静态网站
@@ -232,9 +232,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../output/pdf.html">
+        <li class="chapter " data-level="1.4.2" data-path="pdf.html">
             
-                <a href="../output/pdf.html">
+                <a href="pdf.html">
             
                     
                     3.2.输出为PDF
@@ -250,9 +250,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="../release/">
             
-                <a href="./">
+                <a href="../release/">
             
                     
                     4.发布
@@ -264,9 +264,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="github.html">
+        <li class="chapter " data-level="1.5.1" data-path="../release/github.html">
             
-                <a href="github.html">
+                <a href="../release/github.html">
             
                     
                     4.1.发布到GitHub Pages
@@ -277,9 +277,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="server.html">
+        <li class="chapter " data-level="1.5.2" data-path="../release/server.html">
             
-                <a href="server.html">
+                <a href="../release/server.html">
             
                     
                     4.2.发布到公司文档服务器
@@ -338,7 +338,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4.发布</a>
+        <a href=".." >3.1.输出为静态网站</a>
     </h1>
 </div>
 
@@ -353,8 +353,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x53D1;&#x5E03;">&#x53D1;&#x5E03;</h1>
-<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Github Pages&#x670D;&#x52A1;&#x5C06;&#x6211;&#x4EEC;&#x5199;&#x7684;gitbook&#x53D1;&#x5E03;&#x5230;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#xFF0C;&#x524D;&#x63D0;&#x662F;&#x4F60;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x4E86;Git&#x3001;Github&#x53CA;Github Pages&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+                                <h1 id="&#x8F93;&#x51FA;&#x4E3A;&#x9759;&#x6001;&#x7F51;&#x7AD9;">&#x8F93;&#x51FA;&#x4E3A;&#x9759;&#x6001;&#x7F51;&#x7AD9;</h1>
+<p>&#x4F60;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7684;&#x7F51;&#x7AD9;&#xFF1A;</p>
+<h1 id="&#x672C;&#x5730;&#x9884;&#x89C8;&#x662F;&#x81EA;&#x52A8;&#x751F;&#x6210;">&#x672C;&#x5730;&#x9884;&#x89C8;&#x662F;&#x81EA;&#x52A8;&#x751F;&#x6210;</h1>
+<p>&#x5F53;&#x4F60;&#x7F16;&#x8F91;&#x597D;gitbook&#x6587;&#x6863;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;gitbook&#x7684;&#x547D;&#x4EE4;&#x6765;&#x8FDB;&#x884C;&#x672C;&#x5730;&#x9884;&#x89C8;&#x3002;</p>
+<pre><code class="lang-bash">$ gitbook serve ./{book_name}
+</code></pre>
+<p>gitbook&#x4F1A;&#x542F;&#x52A8;&#x4E00;&#x4E2A;4000&#x7AEF;&#x53E3;&#x7528;&#x4E8E;&#x9884;&#x89C8;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x901A;&#x8FC7;<code>gitbook serve</code>&#x6765;&#x9884;&#x89C8;&#x672C;&#x6587;&#x6863;&#xFF1A;</p>
+<pre><code class="lang-bash">$ gitbook serve gitbook-howtouse
+
+Press CTRL+C to quit ...
+
+Live reload server started on port: 35729
+Starting build ...
+Successfully built!
+
+Starting server ...
+Serving book on http://localhost:4000
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F60;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x8FD9;&#x4E2A;&#x7F51;&#x5740;&#xFF1A; <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>
+<img src="image.png" alt="alt text">
+&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x5728;&#x4F60;&#x7F16;&#x8F91;&#x7684;gitbook&#x9879;&#x76EE;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x4F1A;&#x591A;&#x4E00;&#x4E2A;<code>_book</code>&#x76EE;&#x5F55;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x5C31;&#x662F;&#x751F;&#x6210;&#x7684;&#x672C;&#x5730;&#x9884;&#x89C8;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x5185;&#x5BB9;&#x3002;</p>
+<h1 id="&#x4F7F;&#x7528;gitbook-build&#x53C2;&#x6570;">&#x4F7F;&#x7528;gitbook build&#x53C2;&#x6570;</h1>
+<p>&#x4E0E;&#x76F4;&#x63A5;&#x9884;&#x89C8;&#x751F;&#x6210;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x5185;&#x5BB9;&#x8F93;&#x51FA;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x76EE;&#x5F55;&#x3002;</p>
+<pre><code class="lang-bash">$ gitbook build --output=/tmp/gitbook
+Starting build ...
+Successfuly built !
+$ ls /tmp/gitbook/
+howtouse          search_index.json
+book              imgs              output
+gitbook           index.html        publish
+</code></pre>
+<p>&#x65E0;&#x8BBA;&#x54EA;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4F60;&#x90FD;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x6253;&#x5305;&#xFF0C;&#x53D1;&#x5E03;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x53D1;&#x5E03;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x5C06;&#x8FD9;&#x4E2A;&#x6253;&#x5305;&#x6587;&#x4EF6;&#x7ED9;&#x9605;&#x8BFB;&#x8005;&#x3002;</p>
 
                                 
                                 </section>
@@ -382,12 +413,12 @@
 
             
                 
-                <a href="../output/pdf.html" class="navigation navigation-prev " aria-label="Previous page: 3.2.输出为PDF">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 3.图书输出">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="github.html" class="navigation navigation-next " aria-label="Next page: 4.1.发布到GitHub Pages">
+                <a href="pdf.html" class="navigation navigation-next " aria-label="Next page: 3.2.输出为PDF">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -398,7 +429,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.发布","level":"1.5","depth":1,"next":{"title":"4.1.发布到GitHub Pages","level":"1.5.1","depth":2,"path":"release/github.md","ref":"release/github.md","articles":[]},"previous":{"title":"3.2.输出为PDF","level":"1.4.2","depth":2,"path":"output/pdf.md","ref":"output/pdf.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"release/index.md","mtime":"2024-04-23T09:51:02.764Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-23T09:51:07.428Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1.输出为静态网站","level":"1.4.1","depth":2,"next":{"title":"3.2.输出为PDF","level":"1.4.2","depth":2,"path":"output/pdf.md","ref":"output/pdf.md","articles":[]},"previous":{"title":"3.图书输出","level":"1.4","depth":1,"path":"output/index.md","ref":"output/index.md","articles":[{"title":"3.1.输出为静态网站","level":"1.4.1","depth":2,"path":"output/static.md","ref":"output/static.md","articles":[]},{"title":"3.2.输出为PDF","level":"1.4.2","depth":2,"path":"output/pdf.md","ref":"output/pdf.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"output/static.md","mtime":"2024-04-23T06:47:21.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-23T14:47:28.399Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -406,10 +437,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

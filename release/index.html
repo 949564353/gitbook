@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.3.GitBook命令行速览 · GitBook</title>
+        <title>4.发布 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../structure/" />
+    <link rel="next" href="github.html" />
     
     
-    <link rel="prev" href="gitbook.html" />
+    <link rel="prev" href="../output/pdf.html" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="install.html">
+        <li class="chapter " data-level="1.2" data-path="../base/install.html">
             
-                <a href="install.html">
+                <a href="../base/install.html">
             
                     
                     1.基本安装
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="nodejs.html">
+        <li class="chapter " data-level="1.2.1" data-path="../base/nodejs.html">
             
-                <a href="nodejs.html">
+                <a href="../base/nodejs.html">
             
                     
                     1.1.Node.js安装
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="gitbook.html">
+        <li class="chapter " data-level="1.2.2" data-path="../base/gitbook.html">
             
-                <a href="gitbook.html">
+                <a href="../base/gitbook.html">
             
                     
                     1.2.GitBook安装
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3" data-path="gitbook_cm.html">
+        <li class="chapter " data-level="1.2.3" data-path="../base/gitbook_cm.html">
             
-                <a href="gitbook_cm.html">
+                <a href="../base/gitbook_cm.html">
             
                     
                     1.3.GitBook命令行速览
@@ -250,9 +250,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../release/">
+        <li class="chapter active" data-level="1.5" data-path="./">
             
-                <a href="../release/">
+                <a href="./">
             
                     
                     4.发布
@@ -264,9 +264,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../release/github.html">
+        <li class="chapter " data-level="1.5.1" data-path="github.html">
             
-                <a href="../release/github.html">
+                <a href="github.html">
             
                     
                     4.1.发布到GitHub Pages
@@ -277,9 +277,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../release/server.html">
+        <li class="chapter " data-level="1.5.2" data-path="server.html">
             
-                <a href="../release/server.html">
+                <a href="server.html">
             
                     
                     4.2.发布到公司文档服务器
@@ -338,7 +338,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1.3.GitBook命令行速览</a>
+        <a href=".." >4.发布</a>
     </h1>
 </div>
 
@@ -353,36 +353,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="gitbook&#x547D;&#x4EE4;&#x884C;&#x901F;&#x89C8;">Gitbook&#x547D;&#x4EE4;&#x884C;&#x901F;&#x89C8;</h1>
-<p>Gitbook&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</p>
-<p><strong>&#x672C;&#x5730;&#x9884;&#x89C8;</strong></p>
-<pre><code class="lang-bash">gitbook serve ./{book_name}
-</code></pre>
-<p><strong>&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7F51;&#x7AD9;</strong></p>
-<pre><code class="lang-bash">gitbook build ./{book_name} --output=./{outputFolde}
-</code></pre>
-<p><strong>&#x67E5;&#x770B;&#x5E2E;&#x52A9;</strong></p>
-<pre><code class="lang-bash">gitbook -h
-
-  Usage: gitbook [options] [<span class="hljs-built_in">command</span>]
-
-  Commands:
-
-    build [options] [<span class="hljs-built_in">source</span>_dir] Build a gitbook from a directory
-    serve [options] [<span class="hljs-built_in">source</span>_dir] Build <span class="hljs-keyword">then</span> serve a gitbook from a directory
-    install [options] [<span class="hljs-built_in">source</span>_dir] Install plugins <span class="hljs-keyword">for</span> a book
-    pdf [options] [<span class="hljs-built_in">source</span>_dir] Build a gitbook as a PDF
-    epub [options] [<span class="hljs-built_in">source</span>_dir] Build a gitbook as a ePub book
-    mobi [options] [<span class="hljs-built_in">source</span>_dir] Build a gitbook as a Mobi book
-    init [<span class="hljs-built_in">source</span>_dir]      Create files and folders based on contents of SUMMARY.md
-    publish [<span class="hljs-built_in">source</span>_dir]   Publish content to the associated gitbook.io book
-    git:remote [<span class="hljs-built_in">source</span>_dir] [book_id] Adds a git remote to a book repository
-
-  Options:
-
-    -h, --help     output usage information
-    -V, --version  output the version number
-</code></pre>
+                                <h1 id="&#x53D1;&#x5E03;">&#x53D1;&#x5E03;</h1>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Github Pages&#x670D;&#x52A1;&#x5C06;&#x6211;&#x4EEC;&#x5199;&#x7684;gitbook&#x53D1;&#x5E03;&#x5230;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#xFF0C;&#x524D;&#x63D0;&#x662F;&#x4F60;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x4E86;Git&#x3001;Github&#x53CA;Github Pages&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
 
                                 
                                 </section>
@@ -410,12 +382,12 @@
 
             
                 
-                <a href="gitbook.html" class="navigation navigation-prev " aria-label="Previous page: 1.2.GitBook安装">
+                <a href="../output/pdf.html" class="navigation navigation-prev " aria-label="Previous page: 3.2.输出为PDF">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../structure/" class="navigation navigation-next " aria-label="Next page: 2.图书项目结构">
+                <a href="github.html" class="navigation navigation-next " aria-label="Next page: 4.1.发布到GitHub Pages">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -426,7 +398,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.3.GitBook命令行速览","level":"1.2.3","depth":2,"next":{"title":"2.图书项目结构","level":"1.3","depth":1,"path":"structure/index.md","ref":"structure/index.md","articles":[{"title":"2.1.README.md与SUMMARY编写","level":"1.3.1","depth":2,"path":"structure/readme.md","ref":"structure/readme.md","articles":[]},{"title":"2.2.目录初始化","level":"1.3.2","depth":2,"path":"structure/init.md","ref":"structure/init.md","articles":[]}]},"previous":{"title":"1.2.GitBook安装","level":"1.2.2","depth":2,"path":"base/gitbook.md","ref":"base/gitbook.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"base/gitbook_cm.md","mtime":"2024-04-23T06:23:19.418Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-23T09:51:07.428Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.发布","level":"1.5","depth":1,"next":{"title":"4.1.发布到GitHub Pages","level":"1.5.1","depth":2,"path":"release/github.md","ref":"release/github.md","articles":[]},"previous":{"title":"3.2.输出为PDF","level":"1.4.2","depth":2,"path":"output/pdf.md","ref":"output/pdf.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"release/index.md","mtime":"2024-04-23T09:51:02.764Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-23T14:47:28.399Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -434,10 +406,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
